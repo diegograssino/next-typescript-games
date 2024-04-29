@@ -1,0 +1,42 @@
+@use "./constants.scss";
+@use "./reset.scss";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  color: var(--color-quaternary);
+  background-color: var(--color-primary);
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: var(--font-secondary);
+}
+h1 {
+  font-size: var(--text-8xl);
+}
+h2 {
+  font-size: var(--text-6xl);
+}
+h3 {
+  font-size: var(--text-4xl);
+}
+h4 {
+  font-size: var(--text-2xl);
+}
+h5 {
+  font-size: var(--text-xl);
+}
+h6 {
+  font-size: var(--text-base);
+}
