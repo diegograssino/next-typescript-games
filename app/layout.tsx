@@ -34,9 +34,7 @@ export default function RootLayout({
       <body className={styles.layout}>
         <Navbar />
         {children}
-        <div className={styles.footer}>
-          <Footer />
-        </div>
+        <Footer />
       </body>
     </html>
   );

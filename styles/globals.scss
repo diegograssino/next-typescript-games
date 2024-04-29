@@ -6,8 +6,8 @@ html {
   margin: 0;
   padding: 0;
   font-family: var(--font-primary);
-  color: var(--color-quaternary);
-  background-color: var(--color-primary);
+  color: constants.$color-quaternary;
+  background-color: constants.$color-primary;
 }
 * {
   box-sizing: border-box;
@@ -23,20 +23,20 @@ h6 {
   font-family: var(--font-secondary);
 }
 h1 {
-  font-size: var(--text-8xl);
+  font-size: constants.$text-8xl;
 }
 h2 {
-  font-size: var(--text-6xl);
+  font-size: constants.$text-6xl;
 }
 h3 {
-  font-size: var(--text-4xl);
+  font-size: constants.$text-4xl;
 }
 h4 {
-  font-size: var(--text-2xl);
+  font-size: constants.$text-2xl;
 }
 h5 {
-  font-size: var(--text-xl);
+  font-size: constants.$text-xl;
 }
 h6 {
-  font-size: var(--text-base);
+  font-size: constants.$text-base;
 }

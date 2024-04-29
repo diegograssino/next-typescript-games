@@ -1,12 +1,13 @@
+@use "../styles/constants.scss";
+
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: var(--content-max-width);
+  max-width: constants.$content-max-width;
   margin: 0 auto;
   padding: 0 0.25rem;
-}
-
-.footer {
-  margin-top: auto;
+  & > footer {
+    margin-top: auto;
+  }
 }
