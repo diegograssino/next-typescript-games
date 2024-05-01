@@ -1,0 +1,38 @@
+@use "../theme/colors.scss";
+@use "./reset.scss";
+
+body,
+html {
+  font-family: var(--font-primary);
+  color: colors.$quaternary;
+  background-color: colors.$primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: var(--font-secondary);
+}
+// TODO Fix heading with apply and utility classes
+// h1 {
+//   font-size: colors.$text-8xl;
+// }
+// h2 {
+//   font-size: colors.$text-6xl;
+// }
+// h3 {
+//   font-size: colors.$text-4xl;
+// }
+// h4 {
+//   font-size: colors.$text-2xl;
+// }
+// h5 {
+//   font-size: colors.$text-xl;
+// }
+// h6 {
+//   font-size: colors.$text-base;
+// }

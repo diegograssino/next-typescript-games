@@ -2,7 +2,7 @@ import Footer from "@/components/layout/Footer/Footer";
 import Navbar from "@/components/layout/Navbar/Navbar";
 import type { Metadata } from "next";
 import { Fira_Sans, Montserrat } from "next/font/google";
-import "../styles/globals.scss";
+import "../styles/style.scss";
 import styles from "./layout.module.scss";
 
 const primaryFont = Fira_Sans({
