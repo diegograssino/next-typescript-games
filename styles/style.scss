@@ -1,3 +1,4 @@
-@use "./theme/colors.scss";
-@use "./layout/layout.scss";
+// @use "./theme/colors.scss";
+@forward "./theme/colors" as color-*;
+@forward "./layout/layout";
 @use "./base/base.scss";

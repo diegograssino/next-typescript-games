@@ -1,13 +1,6 @@
 @use "../theme/colors.scss";
 @use "./reset.scss";
 
-body,
-html {
-  font-family: var(--font-primary);
-  color: colors.$quaternary;
-  background-color: colors.$primary;
-}
-
 h1,
 h2,
 h3,

@@ -3,7 +3,6 @@ import Navbar from "@/components/layout/Navbar/Navbar";
 import type { Metadata } from "next";
 import { Fira_Sans, Montserrat } from "next/font/google";
 import "../styles/style.scss";
-import styles from "./layout.module.scss";
 
 const primaryFont = Fira_Sans({
   subsets: ["latin"],
@@ -28,13 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      className={`${primaryFont.variable} ${secondaryFont.variable}`}
+      className={`${primaryFont.variable} ${secondaryFont.variable} layout`}
       lang="en"
     >
-      <body className={styles.layout}>
+      <body>
         <Navbar />
-        {children}
-        <Footer />
+        <div className="container">
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

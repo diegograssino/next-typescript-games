@@ -1,7 +1,9 @@
-import React from "react";
+import { ComponentProps } from "@/types/types";
 
-const Navbar = () => {
-  return <nav>Navbar</nav>;
+interface NavbarProps extends ComponentProps {}
+
+const Navbar = ({ className = "" }: NavbarProps) => {
+  return <nav className={className}>Navbar</nav>;
 };
 
 export default Navbar;

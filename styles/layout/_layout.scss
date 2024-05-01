@@ -1,0 +1,29 @@
+@use "../theme/colors";
+$max-width: 1280px;
+$navbar-height: 56px;
+$footer-min-height: 70px;
+
+.layout {
+  color: colors.$quaternary;
+  background-color: colors.$primary;
+  & > body {
+    font-family: var(--font-primary);
+    & > nav {
+      height: $navbar-height;
+    }
+    & > div {
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - $navbar-height);
+      & > footer {
+        margin-top: auto;
+        min-height: $footer-min-height;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
